@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart diseases</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            width: 400px;
+            text-align: left;
+            margin-left: 20%;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="number"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="number"]:focus {
+            border-color: #4caf50;
+            outline: none;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: aquamarine;
+        }
+        .results {
+            margin-top: 20px;
+            color: #444;
+        }
+        .results h2 {
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <header> <div class="navbar">
+                <a href="/logout">logout</a>
+            </div></header>
+            <h1>Predicting Heart Diseases Using Machine
+                Learning and Different Data
+                Classification Techniques</h1>
+            <form method="POST" action="/predict">
+
+                <label for="Gender">Gender</label>
+                <input type="number" id="Gender" name="Gender" step="0.01" required>
+
+                <label for="Age">Age</label>
+                <input type="number" id="Age" name="Age" step="0.01" required>
+
+                <label for="Occupation">Occupation</label>
+                <input type="number" id="Occupation" name="Occupation" step="0.01" required>
+
+                <label for="Sleep Duration">Sleep Duration</label>
+                <input type="number" id="Sleep Duration" name="Sleep Duration" step="0.01" required>
+
+                <label for="Quality of Sleep">Quality of Sleep</label>
+                <input type="number" id="Quality of Sleep" name="Quality of Sleep" step="0.01" required>
+
+                <label for="Physical Activity Level">Physical Activity Level</label>
+                <input type="number" id="Physical Activity Level" name="Physical Activity Level" step="0.01" required>
+
+                <label for="Stress Level">Stress Level</label>
+                <input type="number" id="Stress Level" name="Stress Level" step="0.01" required>
+
+                <label for="BMI Category">BMI Category</label>
+                <input type="number" id="BMI Category" name="BMI Category" step="0.01" required>
+
+                <label for="Blood Pressure">Blood Pressure</label>
+                <input type="number" id="Blood Pressure" name="Blood Pressure" step="0.01" required>
+
+                <label for="Heart Rate">Heart Rate</label>
+                <input type="number" id="Heart Rate" name="Heart Rate" step="0.01" required>
+
+                <label for="Daily Steps">Daily Steps</label>
+                <input type="number" id="Daily Steps" name="Daily Steps" step="0.01" required>
+
+               
+                <button type="submit">Predict</button>
+            </form>
+
+          
+        </div>
+    </div>
+</body>
+</html>
+
